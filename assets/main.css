@@ -47,6 +47,11 @@ body {
   font-size: 1.6rem;
   position: relative;
   margin-bottom: 3rem; }
+  @media (max-width: 37.5em) {
+    .container {
+      width: 90%;
+      padding: 2rem 4rem;
+      margin: 0; } }
 
 body {
   font-family: "Source Sans Pro", "Open Sans", "Helvetica Neue", "Arial", sans-serif;
@@ -55,16 +60,19 @@ body {
 
 .heading--secondary {
   display: block;
-  max-width: 25rem;
   font-family: "Calendas Plus", "Crimson Text", "Hoefler Text", "Georgia", serif;
   font-size: 4.5rem;
   color: #222;
   font-weight: 300;
   margin-bottom: 1.5rem; }
+  @media (max-width: 37.5em) {
+    .heading--secondary {
+      font-size: 3.5rem; } }
   .heading--secondary::after {
     content: "";
     border-bottom: 2px solid #24536b;
-    display: block; }
+    display: block;
+    width: 22rem; }
 
 p {
   font-size: 1.6rem;
@@ -80,6 +88,10 @@ p {
   font-size: 1.6rem;
   position: relative;
   margin-bottom: 3rem; }
+  @media (max-width: 56.25em) {
+    .blog {
+      width: 90%;
+      padding: 2rem 4rem; } }
   .blog__title {
     display: block;
     font-family: "Calendas Plus", "Crimson Text", "Hoefler Text", "Georgia", serif;
@@ -95,15 +107,27 @@ p {
     display: block;
     font-weight: 700;
     margin-bottom: 1rem; }
-  .blog__intro {
+  .blog__intro > p {
     font-size: 1.6rem;
-    margin-bottom: 2rem; }
+    margin-bottom: 1rem; }
   .blog__link {
     color: #24536b;
     text-transform: uppercase;
     text-decoration: none;
     font-size: 1.6rem;
     font-weight: 700; }
+    .blog__link:link {
+      color: #24536b; }
+    .blog__link:active, .blog__link:visited, .blog__link:hover {
+      color: #222; }
+
+.breadcrumb {
+  margin-bottom: 2rem;
+  text-align: center; }
+  .breadcrumb__link:link, .breadcrumb__link:visited {
+    color: #24536b; }
+  .breadcrumb__link:hover, .breadcrumb__link:active {
+    color: #222; }
 
 .navigation {
   width: 100%; }
@@ -114,7 +138,7 @@ p {
     height: 8rem;
     justify-content: space-between;
     margin: 0 auto;
-    width: 114rem; }
+    width: 90%; }
     .navigation .nav__brand a {
       font-size: 2rem;
       justify-self: flex-start;

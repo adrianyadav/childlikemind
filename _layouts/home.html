@@ -23,9 +23,9 @@ layout: default
         <time datetime="{{ post.date }}" class="blog__date">
           {{ post.date | date: date_format }}
         </time>
-        <p class="blog__intro">
+        <div class="blog__intro">
           {{ post.excerpt }}
-        </p>
+        </div>
         <a href="{{ post.url | relative_url }}" class="blog__link">Read more</a>
       </article>
     {%- endfor -%}

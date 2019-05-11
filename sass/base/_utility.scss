@@ -14,4 +14,10 @@
     font-size: 1.6rem;
     position: relative;
     margin-bottom: 3rem;
+
+    @include respond(phone) {
+        width: 90%;
+        padding: 2rem 4rem;
+        margin: 0;
+    }
 }

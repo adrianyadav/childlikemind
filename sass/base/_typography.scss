@@ -7,17 +7,21 @@ body {
 .heading {
     &--secondary {
         display: block;
-        max-width: 25rem;
         font-family: $serif;
         font-size: 4.5rem;
         color: $grey-dark;
         font-weight: $light;
         margin-bottom: 1.5rem;
 
+        @include respond(phone) {
+            font-size: 3.5rem;
+        }
+
         &::after {
             content: "";
             border-bottom: 2px solid $accent;
             display: block;
+            width: 22rem;
         }
     }
 }

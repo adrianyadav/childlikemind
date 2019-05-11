@@ -8,6 +8,10 @@
     font-size: 1.6rem;
     position: relative;
     margin-bottom: 3rem;
+    @include respond(tab-port) {
+        width: 90%;
+        padding: 2rem 4rem;
+    }
     &__title {
         display: block;
         font-family: $serif;
@@ -27,8 +31,10 @@
     }
 
     &__intro {
-        font-size: 1.6rem;
-        margin-bottom: 2rem;
+        > p {
+            font-size: 1.6rem;
+            margin-bottom: 1rem;
+        }
     }
 
     &__link {
@@ -37,5 +43,28 @@
         text-decoration: none;
         font-size: 1.6rem;
         font-weight: $heavy;
+        &:link {
+            color: $accent;
+        }
+        &:active,
+        &:visited,
+        &:hover {
+            color: $grey-dark;
+        }
+    }
+}
+
+.breadcrumb {
+    margin-bottom: 2rem;
+    text-align: center;
+    &__link {
+        &:link,
+        &:visited {
+            color: $accent;
+        }
+        &:hover,
+        &:active {
+            color: $grey-dark;
+        }
     }
 }

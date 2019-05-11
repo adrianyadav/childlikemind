@@ -6,22 +6,20 @@ layout: default
 
   <article class="blog">
 
-    <div class="u-center-margin ">
-      <div class="breadcrumb">
-        <a class="breadcrumb__link" href="/blog">Blog</a>
-        <span class="breadcrumb__seperator">/</span>
-        <span class="breadcrumb__link">{{ page.title }}</span>
-      </div>
+    <div class="breadcrumb">
+      <a class="breadcrumb__link" href="/">Blog</a>
+      <span class="breadcrumb__seperator">/</span>
+      <span class="breadcrumb__link">{{ page.title }}</span>
     </a>
-    <h1 class="blog__title">
-      {{ page.title | escape }}
-    </h1>
-    {%- assign date_format = site.minima.date_format | default: "%b
-                %-d, %Y" -%}
-    <time datetime="{{ page.date }}" class="blog__date">
-      {{ page.date | date: date_format }}</time>
-
-    {{ content }}
-
   </div>
+
+  <h1 class="blog__title">
+    {{ page.title | escape }}
+  </h1>
+  {%- assign date_format = site.minima.date_format | default: "%b
+                %-d, %Y" -%}
+  <time datetime="{{ page.date }}" class="blog__date">
+    {{ page.date | date: date_format }}</time>
+  {{ content }}
+
 </article></section>
