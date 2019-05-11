@@ -1,0 +1,41 @@
+.blog {
+    width: 75%;
+    margin: 0 auto;
+    box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.1);
+    background-color: rgba(255, 255, 255, 0.6);
+    border-radius: 0.3rem;
+    padding: 3rem 5rem 4rem 8rem;
+    font-size: 1.6rem;
+    position: relative;
+    margin-bottom: 3rem;
+    &__title {
+        display: block;
+        font-family: $serif;
+        font-size: 2.5rem;
+        font-style: italic;
+        font-weight: $light;
+        text-decoration: none;
+        color: $link;
+    }
+    &__date {
+        text-transform: uppercase;
+        color: $grey-light;
+        font-size: 1.2rem;
+        display: block;
+        font-weight: $heavy;
+        margin-bottom: 1rem;
+    }
+
+    &__intro {
+        font-size: 1.6rem;
+        margin-bottom: 2rem;
+    }
+
+    &__link {
+        color: $accent;
+        text-transform: uppercase;
+        text-decoration: none;
+        font-size: 1.6rem;
+        font-weight: $heavy;
+    }
+}

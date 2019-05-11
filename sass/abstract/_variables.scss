@@ -1,0 +1,41 @@
+/* ==========================================================================
+   VARIABLES
+   ========================================================================== */
+
+/* Colors
+   ========================================================================== */
+
+$black: #3b3b3b;
+$white: #f9f9f9;
+
+$grey-dark: #222;
+$grey-medium: #999;
+$grey-light: #d9d9d9;
+
+$hilite: #fffbd7;
+
+$link: #8ab9d1;
+$accent: #24536b;
+
+$heavy: 700;
+$light: 300;
+
+/* Typography
+   ========================================================================== */
+$sans: "Source Sans Pro", "Open Sans", "Helvetica Neue", "Arial", sans-serif;
+$serif: "Calendas Plus", "Crimson Text", "Hoefler Text", "Georgia", serif;
+
+// GRID
+$grid-width: 114rem;
+$gutter-vertical: 8rem;
+$gutter-vertical-small: 6rem;
+$gutter-horizontal: 6rem;
+
+// FONT
+$default-font-size: 1.6rem;
+
+// MEDIA QUERIES
+$phone: 37.5em; //600 px
+$tab-port: 56.25em; //900px;
+$tab-land: 75em; //1200px;
+$big-desktop: 112.5em; //1800px;
