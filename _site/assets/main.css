@@ -1,0 +1,177 @@
+/* Reset CSS */
+/* ==========================================================================
+   VARIABLES
+   ========================================================================== */
+/* Colors
+   ========================================================================== */
+/* Typography
+   ========================================================================== */
+/*  
+0-600px: phone
+600-900px: tablet portrait
+900-1200: tablet landscape
+1200-1800px:  is where our normal styles apply
+1800px: big screen
+*/
+/*
+- phone
+- tab-port
+- tab-land
+- big-desktop
+*/
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  box-sizing: border-box; }
+
+.u-center-text {
+  text-align: center; }
+
+.u-center-margin {
+  margin: 0 auto; }
+
+.container {
+  width: 75%;
+  margin: 0 auto;
+  background-color: rgba(255, 255, 255, 0.6);
+  border-radius: 0.3rem;
+  padding: 3rem 5rem 1rem 8rem;
+  font-size: 1.6rem;
+  position: relative;
+  margin-bottom: 3rem; }
+
+body {
+  font-family: "Source Sans Pro", "Open Sans", "Helvetica Neue", "Arial", sans-serif;
+  font-weight: 400;
+  line-height: 1.7; }
+
+.heading--secondary {
+  display: block;
+  max-width: 25rem;
+  font-family: "Calendas Plus", "Crimson Text", "Hoefler Text", "Georgia", serif;
+  font-size: 4.5rem;
+  color: #222;
+  font-weight: 300;
+  margin-bottom: 1.5rem; }
+  .heading--secondary::after {
+    content: "";
+    border-bottom: 2px solid #24536b;
+    display: block; }
+
+p {
+  font-size: 1.6rem;
+  color: #3b3b3b; }
+
+.blog {
+  width: 75%;
+  margin: 0 auto;
+  box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.1);
+  background-color: rgba(255, 255, 255, 0.6);
+  border-radius: 0.3rem;
+  padding: 3rem 5rem 4rem 8rem;
+  font-size: 1.6rem;
+  position: relative;
+  margin-bottom: 3rem; }
+  .blog__title {
+    display: block;
+    font-family: "Calendas Plus", "Crimson Text", "Hoefler Text", "Georgia", serif;
+    font-size: 2.5rem;
+    font-style: italic;
+    font-weight: 300;
+    text-decoration: none;
+    color: #8ab9d1; }
+  .blog__date {
+    text-transform: uppercase;
+    color: #d9d9d9;
+    font-size: 1.2rem;
+    display: block;
+    font-weight: 700;
+    margin-bottom: 1rem; }
+  .blog__intro {
+    font-size: 1.6rem;
+    margin-bottom: 2rem; }
+  .blog__link {
+    color: #24536b;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 1.6rem;
+    font-weight: 700; }
+
+.navigation {
+  width: 100%; }
+  .navigation .nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 8rem;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 114rem; }
+    .navigation .nav__brand a {
+      font-size: 2rem;
+      justify-self: flex-start;
+      color: #3b3b3b;
+      text-decoration: none; }
+    .navigation .nav__list {
+      display: flex;
+      list-style-type: none; }
+    .navigation .nav__item {
+      margin-left: 1.5rem;
+      display: inline-block; }
+    .navigation .nav__link {
+      font-size: 1.6rem;
+      text-transform: uppercase;
+      font-weight: 700;
+      color: #3b3b3b;
+      text-decoration: none;
+      transition: 0.3s all; }
+      .navigation .nav__link:hover, .navigation .nav__link:active {
+        border-bottom: 1px solid #d9d9d9; }
+
+.row {
+  max-width: 114rem;
+  margin: 0 auto; }
+  .row:not(:last-child) {
+    margin-bottom: 8rem; }
+    @media (max-width: 56.25em) {
+      .row:not(:last-child) {
+        margin-bottom: 6rem; } }
+  @media (max-width: 56.25em) {
+    .row {
+      max-width: 50rem;
+      padding: 0 3rem; } }
+  .row::after {
+    content: "";
+    display: table;
+    clear: both; }
+  .row [class^="col-"] {
+    float: left; }
+    .row [class^="col-"]:not(:last-child) {
+      margin-right: 6rem; }
+      @media (max-width: 56.25em) {
+        .row [class^="col-"]:not(:last-child) {
+          margin-right: 0;
+          margin-bottom: 6rem; } }
+    @media (max-width: 56.25em) {
+      .row [class^="col-"] {
+        width: 100% !important; } }
+  .row .col-1-of-2 {
+    width: calc((100% - 6rem) / 2); }
+  .row .col-1-of-3 {
+    width: calc((100% - 2 * 6rem) / 3); }
+  .row .col-2-of-3 {
+    width: calc( 2 * ((100% - 2 * 6rem) / 3) + 6rem); }
+  .row .col-1-of-4 {
+    width: calc((100% - 3 * 6rem) / 4); }
+  .row .col-2-of-4 {
+    width: calc( 2 * ((100% - 3 * 6rem) / 4) + 6rem); }
+  .row .col-3-of-4 {
+    width: calc( 3 * ((100% - 3 * 6rem) / 4) + 2 *6rem); }
