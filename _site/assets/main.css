@@ -133,6 +133,16 @@ blockquote {
     .blog {
       width: 90%;
       padding: 2rem 4rem; } }
+  .blog__post-title {
+    font-family: "Calendas Plus", "Crimson Text", "Hoefler Text", "Georgia", serif;
+    font-size: 2.5rem;
+    font-style: italic;
+    font-weight: 300;
+    text-decoration: none;
+    color: #8ab9d1;
+    width: 100%; }
+    .blog__post-title:hover {
+      border-bottom: 2px solid #8ab9d1; }
   .blog__title {
     font-family: "Calendas Plus", "Crimson Text", "Hoefler Text", "Georgia", serif;
     font-size: 2.5rem;
@@ -141,8 +151,6 @@ blockquote {
     text-decoration: none;
     color: #8ab9d1;
     width: 100%; }
-    .blog__title:hover {
-      border-bottom: 2px solid #8ab9d1; }
   .blog__date {
     text-transform: uppercase;
     color: #d9d9d9;
