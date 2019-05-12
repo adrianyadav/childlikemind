@@ -14,7 +14,7 @@ layout: default
 
       <article class="blog">
 
-        <a href="{{ post.url | relative_url }}" class="blog__title">
+        <a href="{{ post.url | relative_url }}" class="blog__post-title">
           {{ post.title | escape }}
         </a>
         {%- assign date_format = site.minima.date_format | default: "%b %-d,
